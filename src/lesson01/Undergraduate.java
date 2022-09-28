@@ -1,7 +1,7 @@
 package lesson01;
 import java.util.Objects;
 
-public class Undergraduate {
+public class Undergraduate implements Comparable<Undergraduate> {
   private String id;
   private double gpa;
   public Undergraduate(String id, double gpa) {
@@ -29,5 +29,9 @@ public class Undergraduate {
   @Override
   public int hashCode() {
     return Objects.hash(this.id/*, this.gpa*/);
+  }
+  @Override
+  public int compareTo(Undergraduate undergraduate) {
+    return this.getId().compareTo(undergraduate.getId());
   }
 }
