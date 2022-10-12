@@ -21,9 +21,9 @@ public class G3_6 {
      */
 
     // 1. AJ -> ADで並べる
-    Comparator<Undergraduate> comparator = new Comparator<Undergraduate>() {
-      @Override
-      public int compare(Undergraduate o1, Undergraduate o2) {
+//    Comparator<Undergraduate> comparator = new Comparator<Undergraduate>() {
+//      @Override
+//      public int compare(Undergraduate o1, Undergraduate o2) {
 //        if(!o2.getGpa().equals(o1.getGpa())){
 //          if(o2.getId().equals(o1.getId())){
 //            return o2.getGpa().compareTo(o1.getGpa());
@@ -32,12 +32,12 @@ public class G3_6 {
 //        }
 //        return o2.getId().compareTo(o1.getId());
 //      }
-    };
+//    };
     // 2. GPA順で並べる
 //    Comparator<Undergraduate> newComparator = comparator.thenComparing(Comparator.naturalOrder());;
-    Collections.sort(list1, comparator);
-    for (Undergraduate u: list1) {
-      System.out.println(u.getId() + " " + u.getGpa());
-    }
+//    Collections.sort(list1, comparator);
+//    for(Undergraduate u: list1) {
+//      System.out.println(u.getId() + " " + u.getGpa());
+//    }
   }
 }
